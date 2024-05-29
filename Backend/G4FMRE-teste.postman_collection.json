@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "f71f234e-7927-4cb4-9e0c-fc03ee5dc02e",
+		"name": "G4FMRE-teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17404556"
+	},
+	"item": [
+		{
+			"name": "Buscar todas as noticias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/noticia",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"noticia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar uma nova noticia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"titulo\": \"Palmeras acaba de receber o mundial, mito ou fato ?\",\r\n//     \"descricao\": \"O palmeiras é um time que andar sempre em altos e baixos.\"\r\n// }\r\n\r\n{\r\n    \"titulo\": \"A inteligencia artificial vai dominar o mundo\",\r\n    \"descricao\": \"Recentemente foi descoberto que as pessoas estão gastando mais tempo procurando respostas na inteligencia artificial do que nos outros meios de pesquisa tradicionais como livros, internet, jornais, radios e entre outros.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/noticia",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"noticia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar a noticia",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Palmeras acaba de receber o mundial, mito ou fato ?\",\r\n    \"descricao\": \"Palmeiras!? Está de sacanagem né? haha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/noticia/7cdebc92-1281-4824-b6d5-c19b07885f55",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"noticia",
+						"7cdebc92-1281-4824-b6d5-c19b07885f55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar a noticia",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/noticia/eed58043-0c0a-4ce8-9682-e28458bee12f",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"noticia",
+						"eed58043-0c0a-4ce8-9682-e28458bee12f"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:3000"
+		}
+	]
+}

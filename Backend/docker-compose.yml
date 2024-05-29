@@ -1,0 +1,13 @@
+version: '4.3'
+services:
+  db:
+    image: postgres:14
+    container_name: nome-do-container
+    environment:
+      POSTGRES_USER: nome-de-usuario
+      POSTGRES_PASSWORD: senha-do-usuario
+      POSTGRES_DB: nome-da-db
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
