@@ -1,0 +1,74 @@
+.endereco {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 10px;
+      width: 100%;
+      height: 100%;
+      padding-top: 120px;
+      background: #EBEBEB;
+      height: 100vh;
+}
+
+.endereco h2 {
+      margin-bottom: 30px;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+      font-size: 20px;
+}
+
+.endereco-form{
+      max-width: 600px;
+      
+}
+
+.endereco-form label {
+      margin-bottom: 5px;
+}
+
+.endereco-form input{
+      width: 100%;
+      height: 30px;
+      background-color: none;
+      border: none;
+      margin-top: 5px;
+      border-bottom: 1px solid black;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      background: #ffffffd2;
+      padding-left: 10px;
+}
+
+.btn-form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+}
+
+.btn-form button {
+      width: 180px;
+      height: 38px;
+      border: none;
+      border-radius: 3px;
+      background: #1259C3;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+}
+
+.btn-form button:hover {
+      width: 185px;
+      height: 39px;
+}
+
+
+
+
+
+
+
+
